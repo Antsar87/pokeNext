@@ -46,9 +46,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
         </Grid>
         <Grid xs={12} sm={8}>
           <Card>
-            <Card.Header
-              css={{ display: 'flex', justifyContent: 'space-between' }}
-            >
+            <Card.Header className='flex'>
               <Text h1 transform="capitalize">
                 {pokemon.name}
               </Text>
@@ -58,7 +56,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
                 ghost={!isInFavorites}
                 onClick={onToggleFavorite}
               >
-                {isInFavorites ? "Quitar de Favoritos" : "Poner en Favoritos"}
+                {isInFavorites ? 'Quitar de Favoritos' : 'Poner en Favoritos'}
               </Button>
             </Card.Header>
 
